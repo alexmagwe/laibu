@@ -1,0 +1,14 @@
+export { AggregateLecturerArgs } from "./AggregateLecturerArgs";
+export { CreateManyLecturerArgs } from "./CreateManyLecturerArgs";
+export { CreateOneLecturerArgs } from "./CreateOneLecturerArgs";
+export { DeleteManyLecturerArgs } from "./DeleteManyLecturerArgs";
+export { DeleteOneLecturerArgs } from "./DeleteOneLecturerArgs";
+export { FindFirstLecturerArgs } from "./FindFirstLecturerArgs";
+export { FindFirstLecturerOrThrowArgs } from "./FindFirstLecturerOrThrowArgs";
+export { FindManyLecturerArgs } from "./FindManyLecturerArgs";
+export { FindUniqueLecturerArgs } from "./FindUniqueLecturerArgs";
+export { FindUniqueLecturerOrThrowArgs } from "./FindUniqueLecturerOrThrowArgs";
+export { GroupByLecturerArgs } from "./GroupByLecturerArgs";
+export { UpdateManyLecturerArgs } from "./UpdateManyLecturerArgs";
+export { UpdateOneLecturerArgs } from "./UpdateOneLecturerArgs";
+export { UpsertOneLecturerArgs } from "./UpsertOneLecturerArgs";

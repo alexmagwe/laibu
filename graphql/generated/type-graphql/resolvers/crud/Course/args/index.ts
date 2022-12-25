@@ -1,0 +1,14 @@
+export { AggregateCourseArgs } from "./AggregateCourseArgs";
+export { CreateManyCourseArgs } from "./CreateManyCourseArgs";
+export { CreateOneCourseArgs } from "./CreateOneCourseArgs";
+export { DeleteManyCourseArgs } from "./DeleteManyCourseArgs";
+export { DeleteOneCourseArgs } from "./DeleteOneCourseArgs";
+export { FindFirstCourseArgs } from "./FindFirstCourseArgs";
+export { FindFirstCourseOrThrowArgs } from "./FindFirstCourseOrThrowArgs";
+export { FindManyCourseArgs } from "./FindManyCourseArgs";
+export { FindUniqueCourseArgs } from "./FindUniqueCourseArgs";
+export { FindUniqueCourseOrThrowArgs } from "./FindUniqueCourseOrThrowArgs";
+export { GroupByCourseArgs } from "./GroupByCourseArgs";
+export { UpdateManyCourseArgs } from "./UpdateManyCourseArgs";
+export { UpdateOneCourseArgs } from "./UpdateOneCourseArgs";
+export { UpsertOneCourseArgs } from "./UpsertOneCourseArgs";

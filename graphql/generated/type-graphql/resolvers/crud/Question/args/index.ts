@@ -1,0 +1,14 @@
+export { AggregateQuestionArgs } from "./AggregateQuestionArgs";
+export { CreateManyQuestionArgs } from "./CreateManyQuestionArgs";
+export { CreateOneQuestionArgs } from "./CreateOneQuestionArgs";
+export { DeleteManyQuestionArgs } from "./DeleteManyQuestionArgs";
+export { DeleteOneQuestionArgs } from "./DeleteOneQuestionArgs";
+export { FindFirstQuestionArgs } from "./FindFirstQuestionArgs";
+export { FindFirstQuestionOrThrowArgs } from "./FindFirstQuestionOrThrowArgs";
+export { FindManyQuestionArgs } from "./FindManyQuestionArgs";
+export { FindUniqueQuestionArgs } from "./FindUniqueQuestionArgs";
+export { FindUniqueQuestionOrThrowArgs } from "./FindUniqueQuestionOrThrowArgs";
+export { GroupByQuestionArgs } from "./GroupByQuestionArgs";
+export { UpdateManyQuestionArgs } from "./UpdateManyQuestionArgs";
+export { UpdateOneQuestionArgs } from "./UpdateOneQuestionArgs";
+export { UpsertOneQuestionArgs } from "./UpsertOneQuestionArgs";

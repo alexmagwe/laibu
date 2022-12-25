@@ -5,7 +5,82 @@ generator client {
   provider = "prisma-client-js"
 }
 
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../graphql/generated/type-graphql"
+}
+
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+}
+
+model User {
+  id       String   @id @default(uuid())
+  email    String   @unique
+  username String?
+  courseId Int
+  role     Role     @default(Student)
+  course   Course[]
+  semester Int?
+  year     Int?
+}
+
+model Course {
+  id    String @id @default(uuid())
+  users User[]
+  name  String
+  units Unit[]
+}
+
+model Unit {
+  id         String     @id @default(uuid())
+  course     Course[]
+  name       String
+  code       String     @unique
+  year       Int
+  semester   Int
+  content    Content[]
+  lecturer   Lecturer   @relation(fields: [lecturerId], references: [id])
+  lecturerId String
+  questions  Question[]
+}
+
+model Lecturer {
+  id          String  @id @default(uuid())
+  firstName   String
+  lastName    String
+  unit        Unit[]
+  email       String  @unique
+  contactInfo String?
+}
+
+model Content {
+  id         String         @id @default(uuid())
+  name       String         @unique
+  size       Int?
+  uploadDate DateTime       @default(now())
+  hidden     Boolean        @default(false)
+  unit       Unit[]
+  url        String         @unique
+  type       ContentVariant @default(Content)
+}
+
+model Question {
+  id        String   @id @default(uuid())
+  question  String
+  answer    String?
+  createdAt DateTime @default(now())
+  unit      Unit[]
+}
+
+enum ContentVariant {
+  Video
+  Assignment
+  Content
+}
+
+enum Role {
+  Moderator
+  Student
 }
